@@ -1,0 +1,545 @@
+<DOCTYPE! html>
+<html>
+<title>HOME Page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://localhost/website/website%20car/w3.css">
+<head>
+<style>
+#tagline{
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight:200;
+	}
+div.slides{
+display:none;
+}
+#main{
+float:left;
+}
+div.navbar{
+  position:sticky;
+  top:0;
+  width:100%;
+  overflow: hidden;
+  background-color:DodgerBlue;
+  margin:0px 0px 0px 0px;
+  padding:none;
+  }
+#mainlist{
+	display : block;
+	margin:5px 5px;
+	padding:10px 10px 0px 20px;
+	text-align:center;
+	color: white;
+	text-transform:uppercase;
+	font-weight:300;
+	}
+#mainlist:hover:not(.active){
+  background-color: grey;
+}
+
+div.headingbrand{
+  width:100%;
+  font-size:20px;
+  font-weight:300;
+  text-align:center;
+   
+} 
+div.img{
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  margin:10px 10px 10px 10px;
+} 
+#logolist{
+ float:left;
+ border: 1px solid #ccc;
+ margin:10px;
+ padding:10px;
+}
+#logolist:hover:not(.active){
+  background-color: green;
+}
+div.titles{
+
+  width:100%;
+  overflow: hidden;
+  background-color:grey;
+
+  }
+#ul1{
+float:left;
+}
+#ulmain{
+	margin-left:250px;
+	}
+#topsegments{
+	display : block;
+    float:left;
+	margin:0px 0px;
+	padding:20px;
+	text-align:center;
+	font-weight: 300;	
+}
+#topsegments:hover:not(.active){
+  background-color:red;
+}
+div.heading1{
+    font-size: 25px;
+    font-weight: 300;
+	text-align:center;
+	text-transform:uppercase;
+}
+div.subcontainer{
+border: 1px solid #ccc;
+}
+div.subcontainer1{
+border: 1px solid #ccc;
+div.cretasummary{
+	margin-left:400px;
+}
+</style>
+</head>
+<body>
+<div class="w3-container" style="background: linear-gradient(218.02deg, #F86148 0%, #FDB376 100%");>
+<header>team-rpm.com</header>
+<div class="w3-container" style="width:90%">
+<p id="tagline">you make us as your choice we will make you as our decision</p>
+</div>
+</div>
+<div class="w3-content w3-section w3-border w3-padding"  style="max-width:70%">
+<img  class="slides" src="http://localhost/website/website%20car/astonmartin.jpg" style="width:100%">
+<img  class="slides" src="http://localhost/website/website%20car/hondacity.jpg" style="width:100%">
+<img  class="slides" src="http://localhost/website/website%20car/rolls.jpg" style="width:100%">
+<img  class="slides" src="http://localhost/website/website%20car/elantra.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carslide();
+function carslide() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length){
+  myIndex = 1
+  }    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carslide,2000);
+}
+</script>
+
+<div class="w3-container w3-border w3-black" style="width:90%">
+<a href="http://localhost/website/website%20car/webpagenew.html" class="w3-btn w3-border w3-margin-top w3-margin-bottom w3-blue w3-hover-yellow"> HOME</a>
+<a href="http://localhost/website/website%20car/car page.html" class="w3-btn w3-border w3-margin-top w3-margin-bottom w3-blue w3-hover-yellow"> CAR</a>
+<a href="http://localhost/website/website%20car/loginnew1.html" class="w3-btn w3-border w3-margin-top w3-margin-bottom w3-blue w3-hover-yellow"> LOGIN</a>
+<a href="http://localhost/website/website%20car/REGISTRATION OF USER.html" class="w3-btn w3-border w3-margin-top w3-margin-bottom w3-blue w3-hover-yellow"> REGISTRATION</a>
+</div>
+
+
+<div>
+<div class="headingbrand">
+<h1>SOME POPULAR BRANDS</h1>
+</div>
+<div class="img">
+<ul style="list-style-type:none" id="logo">
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Suzuki-logo.jpg" alt="suzuki logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Hyundai-Logo.jpg" alt="hyundai logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Toyota-Logo-3D.jpg" alt="toyota logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/tata-group-logo-for-vehicles.jpg" alt="tata logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/jeep.jpg" alt="jeep logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Ford-logo-640x400.jpg" alt="ford logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/honda.jpg" alt="honda logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/mahindra.jpg" alt="mahindra logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Kia-logo-640x321.jpg" alt="kia logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/volvagan.jpg" alt="volkswagen logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/renault.jpg" alt="renault logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Fiat-logo-2006-640x550.jpg" alt="fiat logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/nissan.jpg" alt="nissan logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/Skoda-logo-2016-640x550.jpg" alt="skoda logo" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/cheverlet.jpg" alt="cheverlet" width="200" height="200"></a></li>
+<li id="logolist"><a id="hover"> <img src="http://localhost/website/website%20car/mg hector.jpg" alt="mg hector" width="200" height="200"></a></li>
+</div>
+</div>
+<div>
+<div class="heading1">
+<h1>Featured car<h1><br>
+</div>
+<div class="w3-bar w3-grey">
+<button class="w3-bar-item w3-button" onclick="openCity('suvs')">TOP SUV'S</button>
+<button class="w3-bar-item w3-button" onclick="openCity('sedians')">TOP SEDIANS</button>
+<button class="w3-bar-item w3-button" onclick="openCity('hatchback')">TOP HATCHBACKS</button>
+</div>
+</div>
+<div class="w3-container w3-border cars">
+<div id="suv" class="w3-container w3-border car suvs">
+<ul  class="w3-ul" style="style-type:none">
+
+<li id="suv"> <span class="w3-badge">1</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top1suv"  class="w3-border"src="http://localhost/website/website%20car/creta.jpg" alt="creta img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HYUNDAI CRETA</p>
+<p>₹ 11.67 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="suv"> <span class="w3-badge">2</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top2suv"  class="w3-border"src="http://localhost/website/website%20car/venue.jpg" alt="venue img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HYUNDAI VENUE</p>
+<p>₹ 7.86 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="suv"> <span class="w3-badge">3</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top3suv"  class="w3-border"src="http://localhost/website/website%20car/nexon.jpg" alt="nexon img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>TATA NEXON</p>
+<p>₹ 8.29 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="suv"> <span class="w3-badge">4</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top3suv"  class="w3-border"src="http://localhost/website/website%20car/seltos.jpg" alt="SELTOS img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>KIA SELTOS</p>
+<p>₹ 11.43 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+
+
+<li id="suv"> <span class="w3-badge">5</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top4suv"  class="w3-border"src="http://localhost/website/website%20car/scorpio.jpg" alt="scorpio img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MAHINDRA SCORPIO</p>
+<p>₹ 14.6 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="suv"> <span class="w3-badge">6</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top5suv"  class="w3-border"src="http://localhost/website/website%20car/brezza.jpg" alt="brezza img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MARUTI VITARA BREZZA</p>
+<p>₹  8.59 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="suv"> <span class="w3-badge">7</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top6suv"  class="w3-border"src="http://localhost/website/website%20car/crysta.jpg" alt="crysta img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>Toyota Innova Crysta</p>
+<p>₹  18.28 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="suv"> <span class="w3-badge">8</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top7suv"  class="w3-border"src="http://localhost/website/website%20car/ertiga.jpg" alt="ERTIGA img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MARUTI ERTIGA</p>
+<p>₹  8.87 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+
+<li id="suv"> <span class="w3-badge">9</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top8suv"  class="w3-border"src="http://localhost/website/website%20car/fortuner.jpg" alt="fortuner img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>TOYOTA FORTUNER</p>
+<p>₹  33.6 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="suv"> <span class="w3-badge">10</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top8suv"  class="w3-border"src="http://localhost/website/website%20car/xuv.jpg" alt="xuv img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MAHINDRA XUV 500</p>
+<p>₹  16.07  Lakh</p>
+<p>base diesel model<p>
+</div>
+</div>
+
+
+</div>
+</ul>
+
+<div id="sedian" class="w3-container w3-border car sedians" style="display:none">
+<ul  class="w3-ul" style="style-type:none">
+
+<li id="sedian"> <span class="w3-badge">1</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top1sedain"  class="w3-border"src="http://localhost/website/website%20car/verna.jpg" alt="verna img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HYUNDAI VERNA</p>
+<p>₹ 10.88 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="sedian"> <span class="w3-badge">2</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top2sedain"  class="w3-border"src="http://localhost/website/website%20car/hondacity.jpg" alt="city img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HONDA CITY</p>
+<p>₹ 11.82 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="sedian"> <span class="w3-badge">3</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top3sedain"  class="w3-border"src="http://localhost/website/website%20car/ciaz.jpg" alt="CIAZ img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MARUTI SUZUKI CIAZ</p>
+<p>₹ 9.61 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+
+<li id="sedian"> <span class="w3-badge">4</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top4sedain"  class="w3-border"src="http://localhost/website/website%20car/bmw2series.jpg" alt="BMW img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>BMW 3 SERIES</p>
+<p>₹ 49.67  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="sedian"> <span class="w3-badge">5</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top5sedain"  class="w3-border"src="http://localhost/website/website%20car/mercediescla.jpg" alt="CLA img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MERCEDES-BENZ CLA</p>
+<p>₹ 38.52 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="sedian"> <span class="w3-badge">6</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top6sedain"  class="w3-border"src="http://localhost/website/website%20car/mercedescclass.jpg" alt="c-CLASS img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MERCEDES-BENZ C-CLASS</p>
+<p>₹ 48.73  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="sedian"> <span class="w3-badge">7</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top7sedain"  class="w3-border"src="http://localhost/website/website%20car/yaaris.jpg" alt="YAARIS img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>TOYOTA YAARIS</p>
+<p>₹ 10.31  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="sedian"> <span class="w3-badge">8</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top8sedain"  class="w3-border"src="http://localhost/website/website%20car/rapid.jpg" alt="RAPID img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>SCODA RAPID</p>
+<p>₹ 10.49  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="sedian"> <span class="w3-badge">9</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top9sedain"  class="w3-border"src="http://localhost/website/website%20car/civic.jpg" alt="CIVIC img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HONDA CIVIC</p>
+<p>₹ 21.38  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="sedian"> <span class="w3-badge">10</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top10sedain"  class="w3-border"src="http://localhost/website/website%20car/audia6.jpg" alt="AUDI img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>AUDI A6</p>
+<p>₹ 64.62  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+
+</div>
+</ul>
+
+
+
+
+
+<div  id="hatchbacks" class="w3-container w3-border car hatchback" style="display:none">
+<ul  class="w3-ul" style="style-type:none">
+
+<li id="hatchbacks"> <span class="w3-badge">1</span></li>
+<div class="w3-card-4 w3-border cars">
+<img id="top1hatch"  class="w3-border"src="http://localhost/website/website%20car/swift.jpg" alt="swift img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MARUTI SUZUKI SWIFT</p>
+<p>₹ 6.07 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="hatchbacks"> <span class="w3-badge">2</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top2hatch"  class="w3-border"src="http://localhost/website/website%20car/baleno.jpg" alt="baleno img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MARUTI SUZUKI BALENO</p>
+<p>₹ 6.64 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="hatchbacks"> <span class="w3-badge">3</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top3hatch"  class="w3-border"src="http://localhost/website/website%20car/altroz.jpg" alt="altroz img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>TATA ALTROZ</p>
+<p>₹ 6.37 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+
+<li id="hatchbacks"> <span class="w3-badge">4</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top4hatch"  class="w3-border"src="http://localhost/website/website%20car/elitei20.jpg" alt="i20 img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HYUNDAI ELITE I-20</p>
+<p>₹ 7.64 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="hatchbacks"> <span class="w3-badge">5</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top5hatch"  class="w3-border"src="http://localhost/website/website%20car/nios.jpg" alt="nios img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>HYUNDAI GRAND I10 NIOS</p>
+<p>₹ 5.97 Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+<li id="hatchbacks"> <span class="w3-badge">6</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top6hatch"  class="w3-border"src="http://localhost/website/website%20car/tiago.jpg" alt="tiago img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>TATA TIAGO</p>
+<p>₹ 5.58  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="hatchbacks"> <span class="w3-badge">7</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top7hatch"  class="w3-border"src="http://localhost/website/website%20car/kwid.jpg" alt="kwid img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>RENAULT KWID</p>
+<p>₹ 3.74  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="hatchbacks"> <span class="w3-badge">8</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top8hatch"  class="w3-border"src="http://localhost/website/website%20car/alto.jpg" alt="alto img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>MARUTI SUZUKI ALTO</p>
+<p>₹ 3.56  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="hatchbacks"> <span class="w3-badge">9</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top9hatch"  class="w3-border"src="http://localhost/website/website%20car/polo.jpg" alt="polo img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>VOLKSWAGEN POLO</p>
+<p>₹ 6.8  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+<li id="hatchbacks"> <span class="w3-badge">10</span></li>
+<div class="w3-card-4 w3-border">
+<img id="top10hatch"  class="w3-border"src="http://localhost/website/website%20car/triber.jpg" alt="triber img" width="400px" height="300px";>
+<div class="w3-container w3-center w3-border" style="width:400px;">
+<p>RENAULTTRIBER</p>
+<p>₹ 5.83  Lakh</p>
+<p>base petrol model<p>
+</div>
+</div>
+
+
+</div>
+</div>
+</ul>
+<script>
+function openCity(segment) {
+  var i;
+ // alert(segment);
+  var x = document.getElementsByClassName("car");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  var y=document.getElementsByClassName(segment);
+  
+  for(i=0;i<y.length;i++){
+  y[i].style.display="block";
+  }
+}
+</script>
+</body>
+</html>

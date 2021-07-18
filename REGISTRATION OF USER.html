@@ -1,0 +1,120 @@
+<DOCTYPE! HTML>
+<HTML>
+<head>
+<link rel="stylesheet" href="http://localhost/website/website%20car/w3.css">
+</head>
+<style type="text/css">
+body{
+background-image:url(imageland.jpg);
+background-size:cover;
+background-attachment:fixed;
+}
+#tagline{
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight:200;
+	}
+div.formcss{
+  height: 500px;
+  width: 25%;
+  background-color: black;
+  opacity:0.5;
+}
+div.logoreg{
+   height: 20px;
+   width:20px;
+   }
+#form_elem{
+color:white;
+text-transform:uppercase;
+margin:2px;
+} 
+#form_input:hover{
+background-color:blue;
+opacity:1;
+margin:2px;
+
+}  
+</style>
+
+<body>
+<div  class="bg"> 
+<div class="w3-container w3-border" style="background: linear-gradient(218.02deg, #F86148 0%, #FDB376 100%");>
+<header>team-rpm.com</header>
+<div class="w3-container" style="width:100%">
+<p id="tagline">you make us as your choice we will make you as our decision</p>
+</div>
+</div>
+<div style="border:3px solid white" class="w3-container w3-hover-border-green">
+<div style="border:10px solid white" class="w3-container w3-display-left w3-hover-border-blue formcss">
+<form action="http://localhost/website/website%20car/message.php" method="POST">
+<div class="w3-container w3-display-topmiddle logoreg">
+<img src="#" ></img>
+<div class="w3-container w3-display-topmiddle">
+<p style="color:white">SIGNUP</p>
+</div>
+</div>
+<div class="w3-container w3-display-left">
+<label class="form_elem">enter your  firstname</label><br>
+<input class="form_input" id="fname"type="name"  required="name" placeholder=" first name" onchange="validate('fname',this.value)" name="fnames"><br>
+<label class="form_elem">enter your lastname </label><br>
+<input class="form_input" id="lname" type="text" required="name" placeholder="lastname name" onchange="validate('lname',this.value)" name="lnames"><br>
+<label class="form_elem">enter your age</label><br>
+<input class="form_input" id="number"type="number" required="number" placeholder="age" name="ages"><br>
+<label class="form_elem">enter your emailid</label><br>
+<input class="form_input"  id="email" type="email" placeholder="sagarbhose25@gmail.com"  onchange="validateemail(this.value)" name="emails" ><br>
+<label class="form_elem">enter your address</label><br>
+<input class="form_input" id="addres" type="address" required="text" placeholder="address" name="address" ><br>
+<label class="form_elem">enter your username</label><br>
+<input class="form_input" id="username" type="username" required="text" placeholder="username" onchange="validate('username',this.value)" name="usernames"><br>
+<label class="form_elem">enter your password</label><br>
+<input class="form_input" id="password" type="password"  required="text" placeholder="password" onchange="validate('password',this.value)" name="passwords"><br>
+
+
+<label class="form_elem">enter your  car name</label><br>
+<input class="form_input" id="carname"type="name"  required="name" placeholder=" car name like 'i20'" onchange="validate('carname',this.value)" name="carname"><br>
+<label class="form_elem">.....................................</label><br>
+<input class="form_input" id="submit" type="submit" placeholder="    submit"><br>
+</div>
+</form>
+
+
+
+
+<script>
+
+
+
+function validate(id,kar98){
+
+
+if(kar98.trim()=="")
+{
+alert("please fill the box correctly")
+
+document.getElementById(id).value="";
+ }
+ else{
+ return true;
+ }
+ }
+  function validateemail(value){
+
+  
+  var regx=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$/;
+  if(regx.test(value))
+  {
+		return true;
+  }
+  else{
+		alert("please enter valid email")
+  	
+	document.getElementById("email").value="";
+	}
+  }
+ </script> 
+</div>
+</div>
+</div>
+</body>
+</html>
